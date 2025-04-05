@@ -37,7 +37,7 @@ jobs:
         run: npm run test
       - name: Upload test report
         if: success() || failure()
-        uses: dorny/test-reporter@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           artifact: test-results 
           name: test-report
