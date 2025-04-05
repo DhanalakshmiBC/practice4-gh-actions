@@ -37,10 +37,11 @@ jobs:
         run: npm run test
       - name: Upload test report
         if: success() || failure()
-        uses: actions/upload-pages-artifact@v3
+        uses: dorny/test-reporter@v2
         with:
           name: test-report
           path: test.json
+          reporter: jest-junit   
   build:
     needs: test
     runs-on: ubuntu-latest
