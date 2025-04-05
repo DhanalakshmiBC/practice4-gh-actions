@@ -6,7 +6,7 @@ on:
                 description: "Name of the artifact to upload"
                 required: false
                 type: string           
-                default: dist 
+                default: dist-files
 
 jobs:
     deploy:
