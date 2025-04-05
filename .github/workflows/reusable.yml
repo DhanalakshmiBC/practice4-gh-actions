@@ -3,9 +3,9 @@ on:
     workflow_call:
         inputs:
             artifact-name:
-                required: true
-                type: string
                 description: "Name of the artifact to upload"
+                required: false
+                type: string           
                 default: dist 
 
 jobs:
