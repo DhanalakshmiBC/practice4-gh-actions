@@ -32,3 +32,5 @@ jobs:
     build:
         needs: test
         uses: ./.github/workflows/reusable.yml
+        with:
+            artifact-name: dist-files
