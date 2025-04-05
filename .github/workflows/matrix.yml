@@ -28,3 +28,7 @@ jobs:
             with:
                 node-version: ${{ matrix.node}}
             
+
+    build:
+        needs: test
+        uses: ./.github/workflows/reusable.yml
