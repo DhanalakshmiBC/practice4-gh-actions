@@ -2,7 +2,7 @@ name: Website Deployment
 on:
   push:
     branches:
-      - mastes
+      - master
 run-name: "${{ contains(github.head_ref, 'feature/') && 'Feature' || contains(github.head_ref, 'bugfix/') && 'Bugfix' || 'Update' }}: ${{ github.head_ref }} by @${{ github.actor }}"
 jobs:
   lint:
